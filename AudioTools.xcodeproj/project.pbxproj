@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2A36D8551015FD5600E209D8 /* AudioEmbeddedFilePlayerPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A36D8541015FD5600E209D8 /* AudioEmbeddedFilePlayerPatch.m */; };
 		2A36D85C1015FE4900E209D8 /* AudioEmbeddedFilePatchUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A36D85B1015FE4900E209D8 /* AudioEmbeddedFilePatchUI.m */; };
-		2A36D8611015FEE300E209D8 /* AudioEmbeddedFilePatchUI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A36D8601015FEE300E209D8 /* AudioEmbeddedFilePatchUI.xib */; };
 		2A69261F0FE69A55008E0AE3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		2A6926550FE69AA2008E0AE3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF9BA8C0E6393B100B08B06 /* AudioToolbox.framework */; };
 		2AA06E1410C99921006EAE78 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA06E1310C99921006EAE78 /* QuickTime.framework */; };
@@ -279,7 +278,6 @@
 				2B7894E40E60B0E200AB36BF /* AudioInputPatch.xml in Resources */,
 				2B596AA40E6E138D00DF015B /* AudioFileInputPatch.xml in Resources */,
 				2AB24EC40F67F2E100172385 /* AudioSystemBeepPatch.xml in Resources */,
-				2A36D8611015FEE300E209D8 /* AudioEmbeddedFilePatchUI.xib in Resources */,
 				2AB4A7E9101900B800BF6D5E /* AudioEmbeddedFileInputPatch.xml in Resources */,
 				2AB4A7EA101900B800BF6D5E /* AudioEmbeddedFilePlayerPatch.xml in Resources */,
 			);
@@ -456,8 +454,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_FAST_MATH = YES;
@@ -466,7 +465,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				LLVM_LTO = YES;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = "i386 ppc x86_64";
 			};
 			name = Development;
@@ -475,8 +474,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_FAST_MATH = YES;
@@ -485,7 +485,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				LLVM_LTO = YES;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.7;
 				SYMROOT = $TMPDIR/$FULL_PRODUCT_NAME/build;
 				VALID_ARCHS = "i386 ppc x86_64";
 			};
@@ -495,8 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "ppc i386 ppc64 x86_64";
+				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				GCC_AUTO_VECTORIZATION = YES;
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_FAST_MATH = YES;
@@ -505,7 +506,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				LLVM_LTO = YES;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = macosx10.7;
 				VALID_ARCHS = "i386 ppc x86_64";
 			};
 			name = Default;
