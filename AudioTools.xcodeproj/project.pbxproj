@@ -465,7 +465,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				LLVM_LTO = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.6;
 				VALID_ARCHS = "i386 ppc x86_64";
 			};
 			name = Development;
@@ -485,7 +485,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				LLVM_LTO = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.6;
 				SYMROOT = $TMPDIR/$FULL_PRODUCT_NAME/build;
 				VALID_ARCHS = "i386 ppc x86_64";
 			};
@@ -506,7 +506,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = ../../../QCHeaders;
 				LLVM_LTO = YES;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx10.6;
 				VALID_ARCHS = "i386 ppc x86_64";
 			};
 			name = Default;
